@@ -1,0 +1,39 @@
+#conteudo{
+    width: 800px;
+    margin: 50px auto;
+}
+#tabela{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    border-collapse: collapse; 
+}
+td, th{
+    border: 1px solid #ddd;
+    padding: 10px; 
+}
+th{
+    background-color: green; 
+    color: white; 
+}
+tr:hover{ 
+    background-color: yellow;
+}
+.menu-suspenso{
+    position: relative; 
+    display: inline-block; 
+}
+.conteudo-menu-suspenso{
+    display: none;
+    position: absolute; 
+    background-color: cyan;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,2);
+}
+.menu-suspenso:hover.conteudo-menu-suspenso{ 
+    display: block;
+}
+.conteudo-menu-suspenso a{
+    display: block; 
+    padding: 6px;
+    text-decoration: none; 
+}

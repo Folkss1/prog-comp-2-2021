@@ -1,0 +1,7 @@
+#caixa {
+    background-color: lightblue; 
+    width: 300px;
+    border: 15px solid rgb(58, 212, 58); 
+    padding: 50px; 
+    margin: 50px auto; 
+}

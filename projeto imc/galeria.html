@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Exemplo 2</title>
+        <meta charset="utf-8"><!-- sistema de codificação aceita ç á à ã -->
+        <!-- meta é auto-explicação falar de si mesmo -->
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/caixa.css">
+        <style>
+           
+            .galeria {
+                margin: 5px; /* espaçamento externo de 5px */
+                border: 1px solid #ccc; /* bord solida com cor */
+                float: left; /* flutuaçao ou alinhamento á esquerda */
+                width: 180px; /* largura de 180 px */
+            }
+            img{
+                width: 100%; /* cobrom 100% da largura da div da galeria */
+                height: auto; /* altura da imagem é a altura dela 400px */
+
+            }
+            #conteudo{
+                width: 800px; /* largura da area das galerias */
+                margin: 60px auto; /* centralizando a area e tambem criando espaçamento externo de 60px */
+            }
+            .descriçao{
+                padding: 15px; /* espaçamento interno */
+                text-align: center; /* alinhamento do texto */
+            }
+        </style>
+    </head>
+    <body>
+        <nav id="menu"> <!-- menu de navegação -->
+            <ul> <!-- unordened list-->
+                <Li> <a href="home.html"> Home </a> </Li> <!-- list item ou item da lista -->
+                <Li> <a href="imc.html"> Calculadora do IMC </a> </Li>
+                <Li> <a href="viagem.html"> Custo de viagem </a> </Li>
+                <Li> <a href="sobre.html"> Sobre </a> </Li>
+                <Li> <a href="galeria.html"> galeria de imagens </a></Li>
+                <Li><a href="videos.html"> videos do YouTube </a> </Li>
+                <Li><a href="tabela.html"> tabela nutricional </a></Li>
+            </ul>
+        </nav>
+        <!-- o atributo class permite associarmos a mais de um elemento (reutilização)-->
+        <!-- o atributo id permite associamos a apenas um elemeto -->
+        <div id="conteudo">
+            <div class="galeria">
+           <!-- src é o local e o nome da imagem-->
+           <!-- width é a largura da imagem em pixel -->
+           <!-- height é a altura da imagem em pixel -->
+           <a target="_blank" href="img/corrida.jpg"> <!--a imagem sera um link-->
+                <img src="img/corrida.jpg" width="600" height="400"/>
+            </a>
+            <div class="descriçao"> corrida para melhorar cardiorespiração </div>
+            </div>
+            <div class="galeria">
+            <a target="_blank" href="img/dieta.jpg">
+                <img src="img/dieta.jpg" width="600" height="400"/>
+            </a>
+            <div class="descriçao"> dieta para diminuir o colesterol</div>
+            </div>
+            <div class="galeria">
+            <a target="_blank" href="img/lazer.jpg">
+                <img src="img/lazer.jpg" width="600" height="400"/>
+            </a>
+            <div class="descriçao"> lazer para melhorar aspectos mentais </div>
+            </div>
+            <div class="galeria">
+            <a target="_blank" href="img/natacao.png">
+                <img src="img/natacao.png" width="600" height="400"/>
+            </a>
+            <div class="descriçao"> natação para sincronização e respiração </div>
+            </div>
+        </div>
+    </body>
+</html>

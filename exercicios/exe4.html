@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br"><!--avisa o navegador que a lingua é portugues -->
+    <head>
+        <meta charset="utf-8"/> <!--lingua tem acento, cedilha-->
+        <title> exercicio 4 da lista </title>
+        <script type="text/javascript" src="js/exe4.js"> </script>
+        <link rel="stylesheet" href="css/exe4.css"/>
+    </head>
+    <body>
+        <div id="formulario">
+            <h2> exercicio 4 da lista </h2>
+            <div class="campos">
+                <label for="notal"> nota 1</label>
+                <input type="number" id="nota1"/> <!-- vamos usar nota1 no js(entrada de dados) -->
+            </div>
+            <div class="campos">
+                <label for="nota2"> nota 2</label> <!-- vamos usar nota2 no js(entrada de dados) -->
+                <input type="number" id="nota2"/>
+            </div>
+            <div class="campos">
+                <!-- o onclick é chamdo quando o evento ocorre de clique no botao-->
+                <!-- chama a funçao mp. toda afunçao deve ser chamada com nome_funcao()-->
+                <!-- sintaxe de uma linguagem de programaçao --> 
+                <button type="button" onClick="mp()"> calcula media ponderada </button>
+            </div>
+            <div>
+                <!--vamos usar resultado no js(saida de dados)-->
+                <h3 id="resultado"> </h3>
+            </div>
+        </div>
+    </body>
+</html>

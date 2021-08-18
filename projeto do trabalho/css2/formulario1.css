@@ -1,0 +1,6 @@
+#formulario1 {
+    outline: blue 2px solid; /*borda externa azul de 2px de espessura*/
+    padding: 10px; /* espaçamento interno de 10 pixels (bolinha) */
+    width: 550px; /* largura do formulário */
+    margin: 40px auto; /* espaçamento externo de 40 pixels centralizado*/
+}

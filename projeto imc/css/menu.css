@@ -1,0 +1,20 @@
+#menu ul{
+    padding: 10px; /*espaça,emto interno de 0px*/
+    width: 1200px;
+    margin: 10px auto; /* espaçamento externo de 0px da lista */
+    background-color:rgb(46, 206, 46); /* cor de fundo da lista */
+    list-style: none; /* lista não terá bolinhas - os itens */
+}
+/* regra se aplica aos itens da lista do menu */
+#menu ul Li {
+    display: inline; /* os itens da lista ficarão em uma única linha */
+    padding: 30px; /* espaçamento interno entre os itens */
+
+}
+/* regra se aplica aos intens da lista do menu */
+#menu ul Li a {
+    background-color: cyan ; /*cor de fundo */
+    color: rgb(38, 0, 253); /* cor do texto */
+    text-decoration:none; /* sem sublinhado */
+    border-bottom: 3px solid #ffffff; /* borda em baixo com sistema de cores x */
+}

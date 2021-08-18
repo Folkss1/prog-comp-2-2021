@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Exemplo 2</title>
+        <meta charset="utf-8"><!-- sistema de codificação aceita ç á à ã -->
+        <!-- meta é auto-explicação falar de si mesmo -->
+        <link rel="stylesheet" href="css/menu.css">
+        <style>
+            /* CSS */
+            #formulario {
+                outline: blue 2px solid; /*borda externa azul de 2px de espessura*/
+                padding: 10px; /* espaçamento interno de 10 pixels (bolinha) */
+                width: 550px; /* largura do formulário */
+                margin: 40px auto; /* espaçamento externo de 40 pixels centralizado*/
+            }
+            #divpeso, #divaltura, #botao{
+                margin: 10px;
+            }
+            h2 {
+                color:blue;
+            }
+        </style>
+        <script type="text/javascript" src="js/imc.js"> </script>
+    </head>
+    <body>
+        <nav id="menu"> <!-- menu de navegação -->
+            <ul> <!-- unordened list-->
+                <Li> <a href="home.html"> Home </a> </Li> <!-- list item ou item da lista -->
+                <Li> <a href="imc.html"> Calculadora do IMC </a> </Li>
+                <Li> <a href="viagem.html"> Custo de viagem </a> </Li>
+                <Li> <a href="sobre.html"> Sobre </a> </Li>
+                <Li> <a href="galeria.html"> galeria de imagens </a></Li>
+                <Li><a href="videos.html"> videos do YouTube </a> </Li>
+                <Li><a href="tabela.html"> tabela nutricional </a></Li>
+            </ul>
+        </nav>
+        <div id="formulario">
+            <h2> Calculadora de IMC - Índice de Massa Corpórea </h2>
+                <div id="divpeso"><!-- container -->
+                <label> Peso</label><!-- rótulo -->
+                <input type="number" id="peso"><!-- caixa de entrada de dados -->
+                </div>
+            <div id="divaltura">
+                <label> Altura</label>
+                <input type="number" id="altura">
+            </div>
+            <div id="botao">
+                <button onClick="organizar()" type="button"> Calcula </button>
+            </div>
+        </div>
+    </body>
+</html>

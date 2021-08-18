@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Exemplo 2</title>
+        <meta charset="utf-8"><!-- sistema de codificação aceita ç á à ã -->
+        <!-- meta é auto-explicação falar de si mesmo -->
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/caixa.css">
+        <style>
+            #conteudo{
+                width: 800px;
+                margin: 50px auto;
+            }
+            #tabela{
+                font-family: Arial, Helvetica, sans-serif;
+                width: 100%; /* ocupa 100% dos 800px */
+                border-collapse: collapse; /* retira espaços entre as bordas das celulas */
+            }
+            td, th{
+                border: 1px solid #ddd;
+                padding: 10px; /* espaçamento interno de cada celula */
+            }
+            th{
+                background-color: green; /* cabeçalho com fundo verde */
+                color: white; /* cabeçalho com texto branco */
+            }
+            tr:hover{ /* quando passar o mause em cima da linha */
+                background-color: yellow;
+            }
+            .menu-suspenso{
+                position: relative; /* contedo atual acompanha conteudo pagina */
+                display: inline-block; /* mostra conteudo em unica linha */
+            }
+            .conteudo-menu-suspenso{
+                display: none;
+                position: absolute; /* conteudo atual nao acompanha conteudo pagina */
+                background-color: cyan;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,2);
+            }
+            .menu-suspenso:hover.conteudo-menu-suspenso{ /* quando passar o mouse */
+                display: block;
+            }
+            .conteudo-menu-suspenso a{
+                display: block; /* faz aparecer em uma unica linha */
+                padding: 6px;
+                text-decoration: none; /* link nao ficar sublinhado */
+            }
+        </style>
+    </head>
+    <body>
+        <nav id="menu"> <!-- menu de navegação -->
+            <ul> <!-- unordened list-->
+                <Li> <a href="home.html"> Home </a> </Li> <!-- list item ou item da lista -->
+                <Li> <a href="imc.html" > IMC </a></Li>
+                <Li> <a href="viagem.html"> Custo de viagem </a> </Li>
+                <Li> <a href="sobre.html"> Sobre </a> </Li>
+                <Li> <a href="galeria.html"> galeria de imagens </a></Li>
+                <Li><a href="videos.html"> videos do YouTube </a> </Li>
+                <Li><a href="tabela.html"> tabela </a></Li>
+                <li> 
+                    <div class="menu-supenso"> calculadora de IMC
+                        <div class="conteudo-menu-suspenso">
+                            <a href="imc-homen.html"> homem </a>
+                            <a href="imc-mulher.html"> mulher </a>
+                        </div>
+                    </div> 
+                </li>
+            </ul>
+        </nav>
+        <div id="conteudo">
+            <table id="tabela"> <!-- criamos uma tabela -->
+            <tr> <!-- cria uma linha -->
+                     <th> <!-- cabeçalho-->
+                        Nome do jogo
+                     </th>
+                     <th>
+                         Site do jogo
+                     </th>
+                     <th>
+                         Tipo do jogo
+                     </th>
+                <tr> <!-- cria linha-->
+                        <td> <!-- cria uam coluna -->
+                                GTA
+                        </td>
+                        <td>
+                           https://www.epicgames.com/store/pt-BR/p/grand-theft-auto-v
+                        </td>
+                        <td>
+                                jogo maldoso
+                        </td>
+                </tr>
+                <tr>
+                    <td> fortinite </td>
+                    <td>
+                        https://www.epicgames.com/store/pt-BR/p/fortnite
+                    </td>
+                    <td>
+                        jogo em primeira pessoa
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        rocket league
+                    </td>
+                    <td>
+                        https://www.epicgames.com/store/pt-BR/p/rocket-league
+                    </td>
+                    <td>
+                        esporte
+                    </td>
+                </tr>
+            </tr>
+            </table>
+           
+        </div>
+    </body>
+</html>

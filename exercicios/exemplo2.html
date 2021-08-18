@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Exemplo 2</title>
+        <meta charset="utf-8"><!-- sistema de codificação aceita ç á à ã -->
+        <!-- meta é auto-explicação falar de si mesmo -->
+        <style>
+            /* CSS */
+            #formulario {
+                outline: blue 2px solid; /*borda externa azul de 2px de espessura*/
+                padding: 10px; /* espaçamento interno de 10 pixels (bolinha) */
+                width: 550px; /* largura do formulário */
+                margin: 40px auto; /* espaçamento externo de 40 pixels centralizado*/
+            }
+            #divpeso, #divaltura, #botao{
+                margin: 10px;
+            }
+            h2 {
+                color:blue;
+            }
+            /* regra se aplica apenas ao elemento ul dentro do menu */
+            #menu ul{
+                padding: 10px; /*espaça,emto interno de 0px*/
+                margin: 10px; /* espaçamento externo de 0px da lista */
+                background-color:green; /* cor de fundo da lista */
+                list-style: none; /* lista não terá bolinhas - os itens */
+            }
+            /* regra se aplica aos itens da lista do menu */
+            #menu ul Li {
+                display: inline; /* os itens da lista ficarão em uma única linha */
+                padding: 50px; /* espaçamento interno entre os itens */
+
+            }
+            /* regra se aplica aos intens da lista do menu */
+            #menu ul Li a {
+                background-color: blue; /*cor de fundo */
+                color: white; /* cor do texto */
+                text-decoration: none; /* sem sublinhado */
+                border-bottom: 3px solid #EDEDED; /* borda em baixo com sistema de cores x */
+            }
+        </style>
+        <script>
+            /* JavaScript */
+            function organizar(){ /* usamos funcion para organizar */
+                // vamos recuperar o peso digitado pelo usuario
+                // document -> representa o documento HTML
+                // getElementById("peso") -> recupera a caixa de texto
+                // .value -> recupera o valor dentro da xaixa de texto
+                // let peso -> declarando uma variavel que guarda o peso
+                let peso = document.getElementById("peso").value
+                // vamos recuperar a altura digitada pelo usuario
+                let altura = document.getElementById("altura").value
+                // calcular e mostra o imc
+                // comando de igual é de atribuição
+                // a barra / significa divisão
+                // * significa multiplicação
+                let imc = peso / (altura * altura)
+                alert(`O valor do imc é de ${imc.toFixed(2)}`) // é o mais novo
+                alert("o valor do imc é de" + imc.toFixed(2)) // é o mais novo
+            }
+            function viagem(){
+                //entrada de dados
+                // pedagio1, pedagio2 e pedagio3 sao variaveis
+                // Number() -> converte texto em numero
+                let pedagio1 = Number(document.getElementyById("pedagio1").value)
+                let pedagio2 = Number(document.getElementyById("pedagio2").value)
+                let combustivel = Number(document.getElementById("combustivel").value)
+                // processamento
+                let custo = pedagio1 + pedagio2 + combustivel
+                alert(`o custo total da viagem é de ${custo}`)
+            }
+        </script>
+    </head>
+    <body>
+        <nav id="menu"> <!-- menu de navegação -->
+            <ul> <!-- unordened list-->
+                <Li> <a href="#"> Home </a> </Li> <!-- list item ou item da lista -->
+                <Li> <a href="#"> Calculadora do IMC </a> </Li>
+                <Li> <a href="#"> Custo de viagem </a> </Li>
+                <Li> <a href="#"> Sobre </a> </Li>
+            </ul>
+        </nav>
+        <div id="formulario">
+            <h2> Calculadora de IMC - Índice de Massa Corpórea </h2>
+                <div id="divpeso"><!-- container -->
+                <label> Peso</label><!-- rótulo -->
+                <input type="number" id="peso"><!-- caixa de entrada de dados -->
+                </div>
+            <div id="divaltura">
+                <label> Altura</label>
+                <input type="number" id="altura">
+            </div>
+            <div id="botao">
+                <button onClick="organizar()" type="button"> Calcula </button>
+            </div>
+        </div>
+        <div id="formulario">
+            <h2> Calaculadora de custo de viagem </h2>
+            <div id="divpedagio1">
+                <label for="pedagio1"> pedagio 1 </label>
+                <input type="number" id="pedagio1"/>
+            </div>
+            <div id="divpedagio2">
+                <label for="pedagio2"> pedagio 2 </label>
+                <input type="number" id="pedagio2"/>
+            </div>
+            <div id="divcombustivel">
+                <label for="combustivel"> combustivel </label>
+                <input type="number" id="combustivel"/>
+            </div>
+            <div id="divbotao">
+                <button  onClick="viagem()" type="button"> Calcula </button>
+            </div> 
+        </div>
+    </body>
+</html>
